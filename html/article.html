@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статья</title>
+    <link href="../css/article_style.css" rel="stylesheet" type="text/css" />
+</head>  
+<body>
+<div class="wrapper">
+
+    <header class="main-head">
+      <h1 class="logo">Project21 - громкие события 21 века</h1>
+    </header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="main.html">Главная</a></li>
+        <li><a href="publish_article.html">Предложить статью</a></li>
+        <li><a href="account.html">Личный кабинет</a></li>
+        <li><a id="random_article_btn">Случайная статья</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+        <h1 id="hdr_title"></h1>
+        <article class="article">
+          <p class="article-date" id="text_publish_date"></p>
+          <p class="article-date" id="text_event_date"></p>
+          <img alt="Article Image" class="article-image" id="img_article">
+          
+          <p class="article-description" id="text_article"></p>
+        </article>
+
+        <article class="article" id="container_comments">
+          <h1 class="article-title">Комментарии к статье</h1>
+            <div class="comment" id="write_comment">
+              <img class="profile-picture" src="../res/drawable/bagirov.jpg" alt="User Profile Picture">
+              <div class="comment-details">
+                  <span class="username" id="username"></span>
+                  <div class="comment-input">
+                    <textarea id="edit_text_comment" placeholder="Ваш комментарий..."></textarea>
+                    <button id="comment_btn">Отправить</button>
+                  </div>
+              </div>  
+            </div>
+          
+        </article>
+    
+        
+      </div>
+      <aside class="side" id="side">
+        <h1>Подборка статей от редакции сайта</h1>
+      </aside>
+      <footer class="main-footer">
+        <div class="about-us">
+          <h2>Кто мы?</h2>
+          <p>Рассказываем вам о самых громких событиях 21 века без политической пропаганды</p>
+        </div>
+        <div class="contact-us">
+          <h2>Связаться с нами</h2>
+          <p>+7 924 087 27 27</p>
+        </div>
+        <div class="partners">
+          <h2>Наши партнеры</h2>
+            <a href="https://aleksej1024.github.io/soviet_tunes/">Soviet Tunes</a>
+        </div>
+  
+      </footer>
+
+</div>
+</body>
+<script src="../javaScript/user_manager.js"></script>
+<script src="../javaScript/dateUtils.js"></script>
+<script src="../javaScript/article_inflater.js"></script>
+<script src="../javaScript/article.js"></script>
+<script src="../javaScript/load_aside_articles.js"></script>
+<script src="../javaScript/comment_inflater.js"></script>
+<script src="../javaScript/comments.js"></script>
+<script src="../javaScript/article_manager.js"></script>
+<script src="../javaScript/random_article.js"></script>
+</html>

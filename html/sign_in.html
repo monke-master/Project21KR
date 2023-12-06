@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>New Article</title>
+  <link rel="stylesheet" href="../css/sign_up.css">
+</head>
+<body>
+<div class="wrapper">    
+    <header class="main-head">
+      <h1 class="logo">Project21 - громкие события 21 века</h1>
+    </header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="main.html">Главная</a></li>
+        <li><a href="publish_article.html">Предложить статью</a></li>
+        <li><a href="account.html">Личный кабинет</a></li>
+        <li><a id="random_article_btn">Случайная статья</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+        <form style="border:1px solid #ccc">
+            <div class="container">
+              <h1>Войти в учетную запись</h1>
+          
+              <label for="email"><b>Адрес эл. почты</b></label>
+              <input type="text" placeholder="Адрес эл. почты" name="email" id="edit_text_email" required>
+          
+              <label for="psw"><b>Пароль</b></label>
+              <input type="password" placeholder="Пароль" name="psw" id="edit_text_psw" required>
+
+              <div class="clearfix">
+                <button type="button" class="cancelbtn" id="sign_up_btn">Зарегистрироваться</button>
+                <button type="button" class="signupbtn" id="sign_in_btn">Войти</button>
+              </div>
+            </div>
+          </form>
+    </div>
+      <aside class="side" id="side">
+        <h1>Подборка статей от редакции сайта</h1>
+      </aside>
+      <footer class="main-footer">
+        <div class="about-us">
+          <h2>Кто мы?</h2>
+          <p>Рассказываем вам о самых громких событиях 21 века без политической пропаганды</p>
+        </div>
+        <div class="contact-us">
+          <h2>Связаться с нами</h2>
+          <p>+7 924 087 27 27</p>
+        </div>
+        <div class="partners">
+          <h2>Наши партнеры</h2>
+            <a href="https://aleksej1024.github.io/soviet_tunes/">Soviet Tunes</a>
+        </div>
+  
+      </footer>
+
+</div>
+<script src="../javaScript/sign_in.js"></script>
+<script src="../javaScript/article_inflater.js"></script>
+<script src="../javaScript/load_aside_articles.js"></script>
+<script src="../javaScript/article_manager.js"></script>
+<script src="../javaScript/random_article.js"></script>
+
+</body>
+</html>
